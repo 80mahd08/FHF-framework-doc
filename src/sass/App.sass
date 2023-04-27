@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@500&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap')
+$mainColor: #8B3C7F
+$secondColor: #fae3f6
+$thirdColor: #a3759c
+$fourthColor: rgba(250, 227, 246, 0.253)
+$fifthColor: rgb(99, 99, 99)
+$sixthColor: #fdeffb
+$seventhColor: rgb(88, 62, 85)
+$eighthColor: #665965
+$nineColor: rgba(0, 0, 0, 0.205)
+$tenthColor: #f1c5ea
+$eleventhColor: #bd59ae
+
+html
+    position: relative
+    scroll-behavior: smooth
+body
+    position: absolute
+    top: 0
+    width: 100%
+    font-family: 'Poppins', sans-serif
+#root
+    width: 100%
+header
+    display: flex
+    background: #ffffff
+    justify-content: space-between
+    align-items: center
+    position: absolute
+    z-index: 999
+    padding: 0 30px
+    position: fixed
+    width: 100dvw
+    height: 60px
+    top: 0
+    .leftPart
+        h1
+            color: $mainColor
+            font-family: 'Alex Brush'
+    .rightPart
+        display: flex
+        justify-content: space-between
+        width: 100px
+        a
+            display: block
+            width: 40px
+            height: 40px
+            background: $secondColor
+            border-radius: 50px
+            img
+                display: block
+                width: 70%
+                height: 70%
+                margin: 15%
+.SearchPart
+    position: absolute
+    top: 60px
+    width: 100%
+    text-align: center
+    color: #fff
+    height: 350px
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    h1
+        margin-top: 0
+        font-size: 3rem
+        z-index: 2
+    p
+        padding: 0 clamp(10px, calc(10vw + 10px), 200px)
+        color: #fff
+        opacity: .8
+        font-size: 1rem
+    .SqBg
+        position: absolute
+        width: 100%
+        height: 100%
+        background: $mainColor
+        z-index: -1
+        overflow: hidden
+        div
+            position: absolute
+            bottom: 0
+            background-color: $fourthColor
+            width: 200px
+            height: 200px
+            &:first-child
+                right: -120px
+                top: 20px
+                transform: rotate(60deg)
+            &:nth-child(2)
+                left: -120px
+                top: 20px
+                transform: rotate(60deg)
+            &:nth-child(3)
+                left: -120px
+                bottom: 0
+                transform: rotate(60deg)
+            &:nth-child(4)
+                right: -120px
+                bottom: 0
+                transform: rotate(60deg)
+.HeaderSearch
+    padding:
+        bottom: 10px
+    input
+        background-color: $sixthColor
+        border: 1px solid $mainColor !important
+        margin:
+            bottom: 10px !important
+
+.search
+    max-width: 500px
+    margin: 0 auto
+    position: relative
+    input
+        width: 100%
+        max-width: 500px
+        min-width: 250px
+        margin: 20px 0
+        border-radius: 20px
+        padding: 7px
+        border: none
+        outline: none !important
+    .searchDisplay
+        position: absolute
+        background: transparent
+        text-align: left
+        color: black
+        width: 100%
+        border-radius: 20px
+        z-index: 9
+        li
+            border-radius: 20px
+            background-color: $secondColor
+            &:not(:first-child)
+                border-top: 1px solid #4b4949
+                border-top-width: 80%
+            a
+                border-radius: 20px
+                display: block
+                padding: 10px
+                text-decoration: none
+                color: $fifthColor
+                transition: all 0.2s
+                &:hover
+                    background: $thirdColor
+                    color: black
+.ContPart
+    position: absolute
+    width: 100%
+    top: calc( 60px + 350px )
+    margin:
+        top: 50px
+        bottom: 50px
+    .container
+        gap: 30px
+
+        .card
+            background-color: $sixthColor
+            box-shadow: 0px 0px 10px -5px black
+            cursor: pointer
+            border-radius: 11px
+            padding: 20px
+            text-decoration: none
+            height: 200px
+            &:hover
+                background-color: $secondColor
+                box-shadow: 0px 0px 13px -5px black
+            .cardHeader
+                display: flex
+                align-items: center
+                h3
+                    color: $seventhColor
+                    text-decoration: none
+                span
+                    width: 40px
+                    height: 40px
+                    background: #d8bad3
+                    border-radius: 50%
+                    margin-right: 15px
+                    img
+                        width: 70%
+                        height: 70%
+                        margin: 15%
+            .cardBody
+                p
+                    color: $eighthColor
+.navLogo
+    width: 30px
+    height: 25px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    cursor: pointer
+    span
+        display: block
+        width: 100%
+        height: 3px
+        background: $mainColor
+
+
+
+nav
+    width: 20dvw
+    height: calc( 100dvh - 60px )
+    position: absolute
+    top: 60px
+    background: white
+    left: 0
+    z-index: 99
+    overflow-y: none
+    border-right: 2px solid $nineColor
+    padding-top: 0
+    overflow-y: auto
+    .mainLink
+        padding: 20px
+        margin: 10px
+    .lastLink
+        margin-bottom: 50px
+    ul
+        li
+            a
+                text-decoration: none
+                display: flex
+                align-items: center
+                margin: 5px
+                &.cssClasses
+                    margin-bottom: 10px
+                    margin-left: 20px
+                &:active
+                    color: $thirdColor
+                span
+                    display: block
+                    width: 13px
+                    height: 13px
+                    margin-left: 15px
+                    img
+                        width: 100%
+            ul
+                margin-top: 10px !important
+                margin:
+                    left: 5px !important
+                a
+                    content: ""
+    .usageList
+        ul
+            margin-top: -40px
+            li
+                margin: 0
+                margin-left: 20px
+                a
+                    font-size: 13px
+                    color: $eleventhColor
+
+.DocsContPart
+    width: 80dvw
+    height: calc( 100dvh - 60px )
+    position: absolute
+    left: 20dvw
+    top: 60px
+    overflow-y: scroll
+
+    h1
+        text-align: center
+        color: $mainColor
+        font-size: clamp(2rem , 7vw , 3rem)
+        font-family: 'Chivo Mono', monospace
+    p
+        line-height: 1.3
+        color: #333
+    h2
+        color: $seventhColor
+.insta
+    a
+        background: #fcc9f3
+        text-decoration: none
+        margin: 30px auto
+        width: fit-content
+        display: block
+        padding: 20px 15px
+        border-radius: 15px
+        color: #242323
+        transition: all 0.2s
+        &:hover
+            color: #000
+            background: #cf94c6
+.code
+    background: $tenthColor
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px
+    border-radius: 20px
+    margin: 0 auto
+    max-width: 700px
+    span
+        display: block
+        width: 30px
+        height: 30px
+        cursor: pointer
+        position: relative
+        transition: all 0.7s
+        &::after
+            content: "copy"
+            position: absolute
+            font-size: 12px
+            background: black
+            color: white
+            padding: 5px
+            border-radius: 7px
+            top: -27px
+            left: -7px
+            opacity: 0
+            transition: all 0.2s
+
+        &:hover
+            &::after
+                opacity: 1
+        img
+            width: 30px
+            height: 30px
+.usage
+    h3
+        margin-left: 20px
+        color: $eleventhColor
+    .disc
+        margin-left: 20px
+    .classes
+        margin:
+            left: 40px
+    br
+        margin:
+            top: 10px
+        display: block
+.navLogo
+    display: none
+    transition: all 0.5s
+.ex
+    span
+        border-radius: 20px
+        &:first-child
+            transform: rotate(38deg) translate(5px ,10px)
+            width: 120%
+        &:nth-child(2)
+            opacity: 0
+        &:last-child
+            transform: rotate(-38deg) translate(5px ,-10px)
+            width: 120%
+.def
+    transform: rotate(0deg) translate(0px , 0px)
+    span
+        width: 100%      
+@media (max-width: 767px )
+    .DocsContPart
+        width: 100dvw !important
+        left: 0 !important
+    .leftPart
+        position: relative
+        left: 28px
+    .navLogo
+        display: flex
+    nav
+        width: 50dvw
+        box-shadow: 10px 0px 9999px 100px black
+@media (min-width: 767px) 
+    nav
+        display: block !important
