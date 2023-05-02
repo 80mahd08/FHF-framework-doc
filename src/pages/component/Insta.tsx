@@ -44,14 +44,6 @@ export default function Insta() {
                     This command will download and install the FHF CSS framework
                     onto your system.
                 </p>
-                <h2 className="respH2">OR =&gt; Install directly</h2>
-                <p className="respP">
-                    If you prefer to download the FHF CSS file directly, you can
-                    do so by
-                </p>
-                <a href='../../assets/FHF.min.css' download>
-                    install FHF
-                </a>
             </div>
         </div>
     );

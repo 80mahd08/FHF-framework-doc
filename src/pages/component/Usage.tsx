@@ -14,6 +14,7 @@ export default function Usage() {
                     To get started, you first need to include the CSS Framework
                     stylesheet in your HTML file:
                 </p>
+
                 <Code>{'<link rel="stylesheet" href="path/FHF.min.css">'}</Code>
                 <p>or</p>
                 <Code>{"import 'path/FHF.min.css'"}</Code>
@@ -22,6 +23,7 @@ export default function Usage() {
                     the pre-designed CSS classes in your HTML elements. For
                     example:
                 </p>
+
                 <Code>{'<p class="respP">This is a text</p>'}</Code>
                 <h2 className="respH2" id="css-classes">
                     CSS Classes
@@ -40,6 +42,9 @@ export default function Usage() {
                     Sets the font color to orange. <br /> .fontGray: Sets the
                     font color to gray. <br />
                 </p>
+                <h4>Examples :</h4>
+
+                <Code>{'<p class="respP fontBlack">This is a text</p>'}</Code>
                 <h3 className="respH3" id="background-colors">
                     Background Colors
                 </h3>
@@ -56,6 +61,9 @@ export default function Usage() {
                     .bgGray: Sets the background color to gray. <br />
                     .transBg: Sets the background color to transparent. <br />
                 </p>
+                <h4>Examples :</h4>
+
+                <Code>{'<div class="bgBlack">This is a text</div>'}</Code>
                 <h3 className="respH3" id="border">
                     Border
                 </h3>
@@ -74,6 +82,9 @@ export default function Usage() {
                     .borderOrange-*: Sets the border to orange. <br />
                     .borderGray-*: Sets the border to gray. <br />
                 </p>
+                <h4>Examples :</h4>
+
+                <Code>{'<div class="borderBlack-1">This is a text</div>'}</Code>
                 <h3 className="respH3" id="positioning">
                     Positioning Classes
                 </h3>
@@ -81,6 +92,9 @@ export default function Usage() {
                     .centerPosition: Centers an element both horizontally and
                     vertically on the page. <br />
                 </p>
+                <h4>Examples :</h4>
+
+                <Code>{'<div class="centerPosition">This is a text</div>'}</Code>   
                 <h3 className="respH3" id="text">
                     Text Classes
                 </h3>
@@ -88,7 +102,6 @@ export default function Usage() {
                     _ in textDeco stand for text decoration style [ "none" , "underline" , "overline" , "lineThrough" ]<br />
                     _ in textTrans stand for text transform style [ "none" , "capitalize" , "uppercase" , "lowercase" ]<br />
                 </p>
-
                 <p className="respP classes">
                     .textCenter: Centers the text of an element. <br />
                     .textLeft: Aligns the text of an element to the left. <br />
@@ -111,6 +124,9 @@ export default function Usage() {
                     .textDeco-_: Sets the text decoration of an element. <br />
                     .textTrans-_: Sets the text transform of an element. <br />
                 </p>
+                <h4>Examples :</h4>
+
+                <Code>{'<p class="respP textCenter">This is a text</p>'}</Code>
                 <h3 className="respH3" id="grid">
                     Grid Classes
                 </h3>
@@ -123,11 +139,14 @@ export default function Usage() {
                     .respGridFit-*: Creates a responsive grid with flexible
                     column widths. <br />
                 </p>
+                <h4>Examples :</h4>
+
+                <Code>{'<div class="respGridFill-200">This is a text</div>'}</Code>
                 <h3 className="respH3" id="margin">
                     Margin Classes
                 </h3>
                 <p className="respP disc">
-                    * or ** stand for margin value(from 100 to 500) <br /> * in
+                    * or ** stand for margin value(from 1 to 100) <br /> * in
                     respMargin stand for minimal margin value <br /> ** in
                     respMargin stand for maximal margin value
                 </p>
@@ -150,11 +169,14 @@ export default function Usage() {
                     <br />
                     .margNone: Removes the margin of an element. <br />
                 </p>
+                <h4>Examples :</h4>
+
+                <Code>{'<div class="margin-2">This is a text</div>'}</Code>
                 <h3 className="respH3" id="padding">
                     Padding Classes
                 </h3>
                 <p className="respP disc">
-                    * or ** stand for padding value(from 100 to 500) <br /> * in
+                    * or ** stand for padding value(from 1 to 100) <br /> * in
                     respPadding stand for minimal padding value <br /> ** in
                     respPadding stand for maximal padding value
                 </p>
@@ -175,6 +197,9 @@ export default function Usage() {
                     left Padding of an element to a responsive size. <br />
                     .paddNone: Removes the padding of an element. <br />
                 </p>
+                <h4>Examples :</h4>
+
+                <Code>{'<div class="padding-2">This is a text</div>'}</Code>
                 <h3 className="respH3" id="flexBox">
                     Flexbox Classes
                 </h3>
@@ -182,9 +207,10 @@ export default function Usage() {
                     .centerContentFlex: Centers the content of a flexbox
                     container both horizontally and vertically. <br />
                     .flex: Creates a flexbox container. <br />
-                    .flexContainer: Creates a flexible container <br />
-                    &#160;&#160;&#160;.flexItem: Creates a flexible item <br />
                 </p>
+                <h4>Examples :</h4>
+
+                <Code>{'<div class="flex">This is a text</div>'}</Code>
                 <h3 className="respH3" id="float">
                     float Classes
                 </h3>
@@ -193,6 +219,9 @@ export default function Usage() {
                     .floatRight: Floats an element to the right. <br />
                     .clearFix: clear floating elements. <br />
                 </p>
+                <h4>Examples :</h4>
+
+                <Code>{'<div class="floatLeft">This is a text</div>'}</Code>    
                 <h3 className="respH3" id="imgVideo">
                     image and video classes
                 </h3>
@@ -201,6 +230,9 @@ export default function Usage() {
                     .resVideo: Responsive video. <br />
                     .resBgImg: Responsive background image. <br />
                 </p>
+                <h4>Examples :</h4>
+
+                <Code>{'<img src="*" alt="" class="resImg">This is a text</img>'}</Code>
                 <h3 className="respH3" id="container">
                     container classes
                 </h3>
@@ -209,6 +241,9 @@ export default function Usage() {
                     .flexContainer: Creates a flexible container <br />
                     &#160;&#160;&#160;.flexItem: Creates a flexible item <br />
                 </p>
+                <h4>Examples :</h4>
+
+                <Code>{'<div class="flexContainer"><div class="flexItem">This is a text</div><div class="flexItem">This is a text</div></div>'}</Code>   
                 <h3 className="respH3" id="visibility">
                     visibility classes
                 </h3>
@@ -222,6 +257,8 @@ export default function Usage() {
                     to none for the corresponding screen size using media
                     queries. <br />
                 </p>
+                <h4>Examples :</h4>
+                <Code>{'<div class="visibleXs">This is a text</div>'}</Code>
                 <h3 className="respH3" id="borderRadius">
                     border radius
                 </h3>
@@ -238,6 +275,8 @@ export default function Usage() {
                     <br /> .maxRounded
                     <br /> .beyondRounded
                 </p>
+                <h4>Examples :</h4>
+                <Code>{'<div class="rounded">This is a text</div>'}</Code>
             </div>
         </div>
     );

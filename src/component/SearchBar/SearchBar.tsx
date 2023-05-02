@@ -32,7 +32,12 @@ export default function SearchBar() {
         { name: 'padding Classes', link: '/docs/usage#padding', aTag: true },
         { name: 'flexbox Classes', link: '/Docs/usage#flexBox', aTag: true },
         { name: 'float Classes', link: '/Docs/usage#float', aTag: true },
-    ];    const [searchOutput, setSearchOutput] = useState<
+        { name: 'image and video classes', link: '/Docs/usage#imgVideo', aTag: true }, 
+        { name: 'container classes', link: '/docs/usage#container', aTag: true },
+        { name: 'visibility classes', link: '/docs/usage#visibility', aTag: true },
+        { name: 'border radius', link: '/docs/usage#borderRadius', aTag: true },
+    ];    
+    const [searchOutput, setSearchOutput] = useState<
         Array<{ name: string; link: string; aTag: boolean }>
     >([]);
     useEffect(() => {
